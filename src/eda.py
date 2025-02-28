@@ -38,7 +38,7 @@ class EDA:
             plt.xlabel('Date')
             plt.ylabel('Close Price')
             plt.legend()
-            plt.savefig(f'../notebooks/{ticker}_close_price.png')
+            plt.savefig(f'../images/{ticker}_close_price.png')
             plt.close()
             logging.info("Closing price plot saved for %s", ticker)
         except Exception as e:
@@ -60,7 +60,7 @@ class EDA:
                 plt.xlabel('Date')
                 plt.ylabel('Daily Return')
                 plt.legend()
-                plt.savefig(f'../notebooks/{ticker}_daily_returns.png')
+                plt.savefig(f'../images/{ticker}_daily_returns.png')
                 plt.close()
             logging.info("Daily returns calculated and plotted.")
             return self.data
@@ -105,7 +105,7 @@ class EDA:
             decomposition = seasonal_decompose(
                 ticker_data, model='additive', period=period)
             decomposition.plot()
-            plt.savefig(f'../notebooks/{ticker}_decomposition.png')
+            plt.savefig(f'../images/{ticker}_decomposition.png')
             plt.close()
             logging.info("Time series decomposition completed for %s", ticker)
             return decomposition

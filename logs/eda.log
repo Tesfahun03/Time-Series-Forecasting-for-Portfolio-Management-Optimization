@@ -1,1 +1,35 @@
 2025-02-28 20:10:01,028 - root - INFO - ****************************Logging started for EDA module****************************
+2025-02-28 20:18:21,921 - root - INFO - ****************************Logging started for EDA module****************************
+2025-02-28 20:23:44,869 - root - INFO - EDA instance created.
+2025-02-28 20:23:46,873 - root - INFO - Calculating daily returns.
+2025-02-28 20:23:47,291 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 20:23:47,476 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 20:24:05,014 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 20:24:05,269 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 20:24:23,885 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 20:24:24,002 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 20:24:46,366 - root - INFO - Daily returns calculated and plotted.
+2025-02-28 20:25:11,535 - root - INFO - Plotting closing price for TSLA
+2025-02-28 20:25:11,668 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 20:25:11,768 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 20:25:31,369 - root - INFO - Closing price plot saved for TSLA
+2025-02-28 20:25:31,369 - root - INFO - Plotting closing price for BND
+2025-02-28 20:25:31,748 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 20:25:32,086 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 20:26:00,401 - root - INFO - Closing price plot saved for BND
+2025-02-28 20:26:00,401 - root - INFO - Plotting closing price for SPY
+2025-02-28 20:26:00,778 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 20:26:01,152 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 20:26:30,716 - root - INFO - Closing price plot saved for SPY
+2025-02-28 20:27:19,690 - root - INFO - Analyzing volatility with window=20
+2025-02-28 20:27:19,702 - root - INFO - Volatility analysis completed.
+2025-02-28 20:27:25,268 - root - INFO - Detecting outliers with threshold=3
+2025-02-28 20:27:25,275 - root - INFO - Found 34 outliers.
+2025-02-28 20:27:30,501 - root - INFO - Decomposing series for TSLA with period=252
+2025-02-28 20:27:31,872 - root - INFO - Time series decomposition completed for TSLA
+2025-02-28 20:27:31,872 - root - INFO - Decomposing series for BND with period=252
+2025-02-28 20:27:32,329 - root - INFO - Time series decomposition completed for BND
+2025-02-28 20:27:32,329 - root - INFO - Decomposing series for SPY with period=252
+2025-02-28 20:27:32,735 - root - INFO - Time series decomposition completed for SPY
+2025-02-28 20:27:37,235 - root - INFO - Calculating VaR and Sharpe Ratio.
+2025-02-28 20:27:37,243 - root - INFO - Metrics calculated: {'BND': {'VaR (95%)': np.float64(-0.004801219479811536), 'Sharpe Ratio': np.float64(-0.07866243387466695)}, 'SPY': {'VaR (95%)': np.float64(-0.01671924939688598), 'Sharpe Ratio': np.float64(0.6838425788060678)}, 'TSLA': {'VaR (95%)': np.float64(-0.05138725064469325), 'Sharpe Ratio': np.float64(0.825698921799305)}}
