@@ -1,0 +1,34 @@
+2025-02-27 12:07:41,304 - root - INFO - ****************************Logging started for Data Loader module****************************
+2025-02-27 12:22:42,164 - root - INFO - ****************************Logging started for Data Loader module****************************
+2025-02-27 12:22:43,210 - root - INFO - ****************************Logging started for Data Preprocessor module****************************
+2025-02-27 12:23:16,115 - root - INFO - DataLoader instance created with tickers: ['TSLA', 'BND', 'SPY']
+2025-02-27 12:23:16,115 - root - INFO - Starting data fetch from YFinance for ['TSLA', 'BND', 'SPY']
+2025-02-27 12:23:25,599 - root - INFO - Data fetched successfully. Shape: (7605, 7)
+2025-02-27 12:23:25,663 - root - INFO - Data saved to ../data/financial_data.csv
+2025-02-27 12:37:56,217 - root - INFO - DataPreprocessor instance created.
+2025-02-27 12:37:56,218 - root - INFO - Starting data cleaning.
+2025-02-27 12:37:56,259 - root - ERROR - Error during data cleaning: "['Adj Close'] not in index"
+2025-02-27 12:38:51,677 - root - INFO - DataPreprocessor instance created.
+2025-02-27 12:38:51,677 - root - INFO - Starting data cleaning.
+2025-02-27 12:38:51,689 - root - ERROR - Error during data cleaning: "['Adj Close'] not in index"
+2025-02-27 12:40:14,873 - root - INFO - DataPreprocessor instance created.
+2025-02-27 12:40:14,873 - root - INFO - Starting data cleaning.
+2025-02-27 12:40:14,884 - root - ERROR - Error during data cleaning: "['Adj Close'] not in index"
+2025-02-27 12:41:22,205 - root - INFO - DataPreprocessor instance created.
+2025-02-27 12:41:22,205 - root - INFO - Starting data cleaning.
+2025-02-27 12:41:22,215 - root - ERROR - Error during data cleaning: "['Adj Close'] not in index"
+2025-02-27 12:41:50,334 - root - INFO - ****************************Logging started for Data Preprocessor module****************************
+2025-02-27 12:41:50,379 - root - INFO - DataPreprocessor instance created.
+2025-02-27 12:41:50,380 - root - INFO - Starting data cleaning.
+2025-02-27 12:41:50,405 - root - INFO - Data cleaning completed. Basic stats: {'Date': {'count': 7605, 'mean': Timestamp('2020-01-14 14:32:31.242603776'), 'min': Timestamp('2015-01-02 00:00:00'), '25%': Timestamp('2017-07-10 00:00:00'), '50%': Timestamp('2020-01-15 00:00:00'), '75%': Timestamp('2022-07-22 00:00:00'), 'max': Timestamp('2025-01-30 00:00:00'), 'std': nan}, 'Close': {'count': 7605.0, 'mean': 167.73502095490204, 'min': 9.57800006866455, '25%': 65.26795196533203, '50%': 77.86653137207031, '75%': 253.5, 'max': 609.75, 'std': 143.39209968085822}, 'High': {'count': 7605.0, 'mean': 169.19724977384809, 'min': 10.33133316040039, '25%': 65.35826996297234, '50%': 77.94503791182287, '75%': 255.90522581087464, 'max': 610.780029296875, 'std': 144.5362548724247}, 'Low': {'count': 7605.0, 'mean': 166.14713851663305, 'min': 9.403332710266112, '25%': 65.16937172207702, '50%': 77.785483934803, '75%': 250.6499938964844, 'max': 606.7999877929688, 'std': 142.14392804590165}, 'Open': {'count': 7605.0, 'mean': 167.73075719413947, 'min': 9.48799991607666, '25%': 65.27094267263375, '50%': 77.86599953099987, '75%': 253.5097986198129, 'max': 609.8099975585938, 'std': 143.398494273335}, 'Volume': {'count': 7605.0, 'mean': 67803524.95726496, 'min': 0.0, '25%': 5627200.0, '50%': 62122300.0, '75%': 96507900.0, 'max': 914082000.0, 'std': 67943983.09766611}}
+2025-02-27 12:41:50,460 - root - INFO - Data saved to ../data/cleaned_data.csv
+2025-02-27 12:47:57,908 - root - INFO - ****************************Logging started for Data Preprocessor module****************************
+2025-02-27 12:48:28,995 - root - INFO - DataPreprocessor instance created.
+2025-02-27 12:48:28,996 - root - INFO - Starting data cleaning.
+2025-02-27 12:48:29,025 - root - INFO - Data cleaning completed. Basic stats: {'Date': {'count': 7605, 'mean': Timestamp('2020-01-14 14:32:31.242603776'), 'min': Timestamp('2015-01-02 00:00:00'), '25%': Timestamp('2017-07-10 00:00:00'), '50%': Timestamp('2020-01-15 00:00:00'), '75%': Timestamp('2022-07-22 00:00:00'), 'max': Timestamp('2025-01-30 00:00:00'), 'std': nan}, 'Close': {'count': 7605.0, 'mean': 167.73502095490204, 'min': 9.57800006866455, '25%': 65.26795196533203, '50%': 77.86653137207031, '75%': 253.5, 'max': 609.75, 'std': 143.39209968085822}, 'High': {'count': 7605.0, 'mean': 169.19724977384809, 'min': 10.33133316040039, '25%': 65.35826996297234, '50%': 77.94503791182287, '75%': 255.90522581087464, 'max': 610.780029296875, 'std': 144.5362548724247}, 'Low': {'count': 7605.0, 'mean': 166.14713851663305, 'min': 9.403332710266113, '25%': 65.16937172207702, '50%': 77.785483934803, '75%': 250.64999389648438, 'max': 606.7999877929688, 'std': 142.14392804590165}, 'Open': {'count': 7605.0, 'mean': 167.73075719413947, 'min': 9.48799991607666, '25%': 65.27094267263375, '50%': 77.86599953099987, '75%': 253.5097986198129, 'max': 609.8099975585938, 'std': 143.398494273335}, 'Volume': {'count': 7605.0, 'mean': 67803524.95726496, 'min': 0.0, '25%': 5627200.0, '50%': 62122300.0, '75%': 96507900.0, 'max': 914082000.0, 'std': 67943983.09766611}}
+2025-02-27 12:48:29,084 - root - INFO - Data saved to ../data/cleaned_data.csv
+2025-02-27 12:48:40,142 - root - INFO - DataPreprocessor instance created.
+2025-02-27 12:48:40,143 - root - INFO - Starting data cleaning.
+2025-02-27 12:48:40,172 - root - INFO - Data cleaning completed. Basic stats: {'Date': {'count': 7605, 'mean': Timestamp('2020-01-14 14:32:31.242603776'), 'min': Timestamp('2015-01-02 00:00:00'), '25%': Timestamp('2017-07-10 00:00:00'), '50%': Timestamp('2020-01-15 00:00:00'), '75%': Timestamp('2022-07-22 00:00:00'), 'max': Timestamp('2025-01-30 00:00:00'), 'std': nan}, 'Close': {'count': 7605.0, 'mean': 167.73502095490204, 'min': 9.57800006866455, '25%': 65.26795196533203, '50%': 77.86653137207031, '75%': 253.5, 'max': 609.75, 'std': 143.39209968085822}, 'High': {'count': 7605.0, 'mean': 169.19724977384809, 'min': 10.33133316040039, '25%': 65.35826996297234, '50%': 77.94503791182287, '75%': 255.90522581087464, 'max': 610.780029296875, 'std': 144.53625487242473}, 'Low': {'count': 7605.0, 'mean': 166.14713851663305, 'min': 9.403332710266112, '25%': 65.16937172207702, '50%': 77.785483934803, '75%': 250.6499938964844, 'max': 606.7999877929688, 'std': 142.14392804590165}, 'Open': {'count': 7605.0, 'mean': 167.73075719413947, 'min': 9.48799991607666, '25%': 65.27094267263375, '50%': 77.86599953099987, '75%': 253.5097986198129, 'max': 609.8099975585938, 'std': 143.398494273335}, 'Volume': {'count': 7605.0, 'mean': 67803524.95726496, 'min': 0.0, '25%': 5627200.0, '50%': 62122300.0, '75%': 96507900.0, 'max': 914082000.0, 'std': 67943983.09766611}}
+2025-02-27 12:48:40,236 - root - INFO - Data saved to ../data/cleaned_data.csv
+2025-02-27 12:49:37,343 - root - INFO - ****************************Logging started for Data Preprocessor module****************************
