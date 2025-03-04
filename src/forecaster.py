@@ -79,46 +79,46 @@ class Forecaster:
             logging.error("Error in SARIMA forecasting: %s", e)
             raise
 
-    def forecast_lstm(self, look_back=60, epochs=50, batch_size=32):
-        """Forecasts using LSTM. Note: GPU recommended for faster training."""
-        logging.info(
-            "Starting LSTM forecasting (GPU recommended for large datasets)")
-        try:
-            # Scale data
-            scaler = MinMaxScaler()
-            scaled_data = scaler.fit_transform(self.data.values.reshape(-1, 1))
-            train_scaled = scaled_data[:int(
-                len(scaled_data) * (1 - self.test_size))]
-            test_scaled = scaled_data[int(
-                len(scaled_data) * (1 - self.test_size)):]
+    # def forecast_lstm(self, look_back=60, epochs=50, batch_size=32):
+    #     """Forecasts using LSTM. Note: GPU recommended for faster training."""
+    #     logging.info(
+    #         "Starting LSTM forecasting (GPU recommended for large datasets)")
+    #     try:
+    #         # Scale data
+    #         scaler = MinMaxScaler()
+    #         scaled_data = scaler.fit_transform(self.data.values.reshape(-1, 1))
+    #         train_scaled = scaled_data[:int(
+    #             len(scaled_data) * (1 - self.test_size))]
+    #         test_scaled = scaled_data[int(
+    #             len(scaled_data) * (1 - self.test_size)):]
 
-            # Prepare sequences
-            X_train, y_train = self._create_sequences(train_scaled, look_back)
-            X_test, y_test = self._create_sequences(test_scaled, look_back)
+    #         # Prepare sequences
+    #         X_train, y_train = self._create_sequences(train_scaled, look_back)
+    #         X_test, y_test = self._create_sequences(test_scaled, look_back)
 
-            # Build LSTM model
-            model = Sequential()
-            model.add(LSTM(50, return_sequences=True,
-                      input_shape=(look_back, 1)))
-            model.add(LSTM(50))
-            model.add(Dense(1))
-            model.compile(optimizer='adam', loss='mse')
+    #         # Build LSTM model
+    #         model = Sequential()
+    #         model.add(LSTM(50, return_sequences=True,
+    #                   input_shape=(look_back, 1)))
+    #         model.add(LSTM(50))
+    #         model.add(Dense(1))
+    #         model.compile(optimizer='adam', loss='mse')
 
-            # Train model
-            model.fit(X_train, y_train, epochs=epochs,
-                      batch_size=batch_size, verbose=0)
-            forecast_scaled = model.predict(X_test, verbose=0)
-            forecast = scaler.inverse_transform(forecast_scaled)
+    #         # Train model
+    #         model.fit(X_train, y_train, epochs=epochs,
+    #                   batch_size=batch_size, verbose=0)
+    #         forecast_scaled = model.predict(X_test, verbose=0)
+    #         forecast = scaler.inverse_transform(forecast_scaled)
 
-            # Align forecast with test set
-            forecast_series = pd.Series(
-                forecast.flatten(), index=self.test.index[-len(forecast):])
-            logging.info(
-                "LSTM forecast completed with look_back: %d", look_back)
-            return self._evaluate_forecast(forecast_series, "LSTM")
-        except Exception as e:
-            logging.error("Error in LSTM forecasting: %s", e)
-            raise
+    #         # Align forecast with test set
+    #         forecast_series = pd.Series(
+    #             forecast.flatten(), index=self.test.index[-len(forecast):])
+    #         logging.info(
+    #             "LSTM forecast completed with look_back: %d", look_back)
+    #         return self._evaluate_forecast(forecast_series, "LSTM")
+    #     except Exception as e:
+    #         logging.error("Error in LSTM forecasting: %s", e)
+    #         raise
 
     def _create_sequences(self, data, look_back):
         """Helper to create sequences for LSTM."""
