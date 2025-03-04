@@ -50,3 +50,110 @@
 2025-02-28 20:11:34,424 - root - INFO - DataPreprocessor instance created.
 2025-02-28 20:11:34,424 - root - INFO - Starting data cleaning.
 2025-02-28 20:11:34,435 - root - INFO - Data cleaning completed. Basic stats: {'Date': {'count': 7605, 'mean': Timestamp('2020-01-14 14:32:31.242603776'), 'min': Timestamp('2015-01-02 00:00:00'), '25%': Timestamp('2017-07-10 00:00:00'), '50%': Timestamp('2020-01-15 00:00:00'), '75%': Timestamp('2022-07-22 00:00:00'), 'max': Timestamp('2025-01-30 00:00:00'), 'std': nan}, 'Close': {'count': 7605.0, 'mean': 167.7350209117641, 'min': 9.57800006866455, '25%': 65.2679443359375, '50%': 77.86648559570312, '75%': 253.5, 'max': 609.75, 'std': 143.3920997385198}, 'High': {'count': 7605.0, 'mean': 169.19724973143525, 'min': 10.33133316040039, '25%': 65.35828522367851, '50%': 77.945053187906, '75%': 255.9051799909692, 'max': 610.780029296875, 'std': 144.53625493070408}, 'Low': {'count': 7605.0, 'mean': 166.14713846874486, 'min': 9.403332710266112, '25%': 65.16938697317595, '50%': 77.78549537311304, '75%': 250.6499938964844, 'max': 606.7999877929688, 'std': 142.14392809145215}, 'Open': {'count': 7605.0, 'mean': 167.7307571497167, 'min': 9.48799991607666, '25%': 65.27095795702246, '50%': 77.86596849534769, '75%': 253.50976793217816, 'max': 609.8099975585938, 'std': 143.3984943269185}, 'Volume': {'count': 7605.0, 'mean': 67803524.95726496, 'min': 0.0, '25%': 5627200.0, '50%': 62122300.0, '75%': 96507900.0, 'max': 914082000.0, 'std': 67943983.09766611}}
+2025-03-04 14:29:35,327 - root - INFO - ****************************Logging started for Data Loader module****************************
+2025-03-04 14:29:36,306 - root - INFO - ****************************Logging started for Data Preprocessor module****************************
+2025-03-04 14:29:37,888 - root - INFO - Logging started for Forecaster module
+2025-03-04 14:29:44,827 - root - INFO - DataLoader instance created with tickers: ['TSLA']
+2025-03-04 14:29:44,828 - root - INFO - Starting data fetch from YFinance for ['TSLA']
+2025-03-04 14:29:50,441 - root - INFO - Data fetched successfully. Shape: (2535, 5)
+2025-03-04 14:29:50,466 - root - INFO - Data saved to ../data/financial_data.csv
+2025-03-04 14:29:50,473 - root - INFO - DataPreprocessor instance created.
+2025-03-04 14:29:50,473 - root - INFO - Starting data cleaning.
+2025-03-04 14:29:50,474 - root - ERROR - Error during data cleaning: 'Date'
+2025-03-04 14:42:00,782 - root - INFO - DataLoader instance created with tickers: ['TSLA']
+2025-03-04 14:42:00,783 - root - INFO - Starting data fetch from YFinance for ['TSLA']
+2025-03-04 14:42:00,841 - root - INFO - Data fetched successfully. Shape: (2535, 5)
+2025-03-04 14:42:00,860 - root - INFO - Data saved to ../data/financial_data.csv
+2025-03-04 14:42:00,860 - root - INFO - DataPreprocessor instance created.
+2025-03-04 14:42:00,860 - root - INFO - Starting data cleaning.
+2025-03-04 14:42:00,861 - root - ERROR - Error during data cleaning: 'Date'
+2025-03-04 14:42:49,072 - root - INFO - ****************************Logging started for Data Loader module****************************
+2025-03-04 14:42:49,956 - root - INFO - ****************************Logging started for Data Preprocessor module****************************
+2025-03-04 14:42:51,406 - root - INFO - Logging started for Forecaster module
+2025-03-04 14:42:56,828 - root - INFO - DataLoader instance created with tickers: ['TSLA']
+2025-03-04 14:42:56,828 - root - INFO - Starting data fetch from YFinance for ['TSLA']
+2025-03-04 14:42:58,447 - root - INFO - Data fetched successfully. Shape: (2535, 5)
+2025-03-04 14:42:58,466 - root - INFO - Data saved to ../data/financial_data.csv
+2025-03-04 14:42:58,466 - root - INFO - DataPreprocessor instance created.
+2025-03-04 14:42:58,466 - root - INFO - Starting data cleaning.
+2025-03-04 14:42:58,467 - root - INFO - Reset index to make 'Date' a column.
+2025-03-04 14:42:58,472 - root - ERROR - Error during data cleaning: "['Adj Close'] not in index"
+2025-03-04 14:44:46,796 - root - INFO - ****************************Logging started for Data Loader module****************************
+2025-03-04 14:44:47,732 - root - INFO - ****************************Logging started for Data Preprocessor module****************************
+2025-03-04 14:44:48,916 - root - INFO - Logging started for Forecaster module
+2025-03-04 14:44:57,035 - root - INFO - DataLoader instance created with tickers: ['TSLA']
+2025-03-04 14:44:57,035 - root - INFO - Starting data fetch from YFinance for ['TSLA']
+2025-03-04 14:44:58,638 - root - INFO - Data fetched successfully. Shape: (2535, 5)
+2025-03-04 14:44:58,655 - root - INFO - Data saved to ../data/financial_data.csv
+2025-03-04 14:44:58,655 - root - INFO - DataPreprocessor instance created.
+2025-03-04 14:44:58,656 - root - INFO - Starting data cleaning.
+2025-03-04 14:44:58,657 - root - INFO - Reset index to make 'Date' a column.
+2025-03-04 14:44:58,662 - root - ERROR - Error during data cleaning: "['Adj Close'] not in index"
+2025-03-04 14:45:11,828 - root - INFO - DataLoader instance created with tickers: ['TSLA']
+2025-03-04 14:45:11,828 - root - INFO - Starting data fetch from YFinance for ['TSLA']
+2025-03-04 14:45:11,899 - root - INFO - Data fetched successfully. Shape: (2535, 5)
+2025-03-04 14:45:11,915 - root - INFO - Data saved to ../data/financial_data.csv
+2025-03-04 14:45:11,916 - root - INFO - DataPreprocessor instance created.
+2025-03-04 14:45:11,916 - root - INFO - Starting data cleaning.
+2025-03-04 14:45:11,917 - root - INFO - Reset index to make 'Date' a column.
+2025-03-04 14:45:11,920 - root - ERROR - Error during data cleaning: "['Adj Close'] not in index"
+2025-03-04 14:45:39,975 - root - INFO - ****************************Logging started for Data Loader module****************************
+2025-03-04 14:45:40,823 - root - INFO - ****************************Logging started for Data Preprocessor module****************************
+2025-03-04 14:45:42,056 - root - INFO - Logging started for Forecaster module
+2025-03-04 14:45:45,621 - root - INFO - DataLoader instance created with tickers: ['TSLA']
+2025-03-04 14:45:45,621 - root - INFO - Starting data fetch from YFinance for ['TSLA']
+2025-03-04 14:45:47,106 - root - INFO - Data fetched successfully. Shape: (2535, 5)
+2025-03-04 14:45:47,126 - root - INFO - Data saved to ../data/financial_data.csv
+2025-03-04 14:45:47,126 - root - INFO - DataPreprocessor instance created.
+2025-03-04 14:45:47,126 - root - INFO - Starting data cleaning.
+2025-03-04 14:45:47,126 - root - INFO - Reset index to make 'Date' a column.
+2025-03-04 14:45:47,156 - root - INFO - Data cleaning completed. Basic stats: {('Date', ''): {'count': 2535, 'mean': Timestamp('2020-01-14 14:32:31.242603776'), 'min': Timestamp('2015-01-02 00:00:00'), '25%': Timestamp('2017-07-10 12:00:00'), '50%': Timestamp('2020-01-15 00:00:00'), '75%': Timestamp('2022-07-21 12:00:00'), 'max': Timestamp('2025-01-30 00:00:00'), 'std': nan}, ('Close', 'TSLA'): {'count': 2535.0, 'mean': 117.84820877767409, 'min': 9.57800006866455, '25%': 17.227999687194824, '50%': 30.29800033569336, '75%': 221.5250015258789, 'max': 479.8599853515625, 'std': 116.50828780920438}, ('High', 'TSLA'): {'count': 2535.0, 'mean': 120.47482726042557, 'min': 10.33133316040039, '25%': 17.52766704559326, '50%': 32.3293342590332, '75%': 226.69667053222656, 'max': 488.5400085449219, 'std': 119.23602508848201}, ('Low', 'TSLA'): {'count': 2535.0, 'mean': 115.09751396781124, 'min': 9.403332710266113, '25%': 16.94200038909912, '50%': 29.760000228881836, '75%': 217.06166076660156, 'max': 457.510009765625, 'std': 113.69892958780142}, ('Open', 'TSLA'): {'count': 2535.0, 'mean': 117.87766160908535, 'min': 9.48799991607666, '25%': 17.259333610534668, '50%': 31.299999237060547, '75%': 222.65333557128906, 'max': 475.8999938964844, 'std': 116.61157478604943}, ('Volume', 'TSLA'): {'count': 2535.0, 'mean': 112030827.6923077, 'min': 10620000.0, '25%': 66802950.0, '50%': 92641800.0, '75%': 129428300.0, 'max': 914082000.0, 'std': 73875087.25693773}}
+2025-03-04 14:48:12,271 - root - INFO - DataLoader instance created with tickers: ['TSLA']
+2025-03-04 14:48:12,271 - root - INFO - Starting data fetch from YFinance for ['TSLA']
+2025-03-04 14:48:12,326 - root - INFO - Data fetched successfully. Shape: (2535, 5)
+2025-03-04 14:48:12,344 - root - INFO - Data saved to ../data/financial_data.csv
+2025-03-04 14:48:12,344 - root - INFO - DataPreprocessor instance created.
+2025-03-04 14:48:12,344 - root - INFO - Starting data cleaning.
+2025-03-04 14:48:12,346 - root - INFO - Reset index to make 'Date' a column.
+2025-03-04 14:48:12,437 - root - INFO - Data cleaning completed. Basic stats: {('Date', ''): {'count': 2535, 'mean': Timestamp('2020-01-14 14:32:31.242603776'), 'min': Timestamp('2015-01-02 00:00:00'), '25%': Timestamp('2017-07-10 12:00:00'), '50%': Timestamp('2020-01-15 00:00:00'), '75%': Timestamp('2022-07-21 12:00:00'), 'max': Timestamp('2025-01-30 00:00:00'), 'std': nan}, ('Close', 'TSLA'): {'count': 2535.0, 'mean': 117.84820877767409, 'min': 9.57800006866455, '25%': 17.227999687194824, '50%': 30.29800033569336, '75%': 221.5250015258789, 'max': 479.8599853515625, 'std': 116.50828780920438}, ('High', 'TSLA'): {'count': 2535.0, 'mean': 120.47482726042557, 'min': 10.33133316040039, '25%': 17.52766704559326, '50%': 32.3293342590332, '75%': 226.69667053222656, 'max': 488.5400085449219, 'std': 119.23602508848201}, ('Low', 'TSLA'): {'count': 2535.0, 'mean': 115.09751396781124, 'min': 9.403332710266113, '25%': 16.94200038909912, '50%': 29.760000228881836, '75%': 217.06166076660156, 'max': 457.510009765625, 'std': 113.69892958780142}, ('Open', 'TSLA'): {'count': 2535.0, 'mean': 117.87766160908535, 'min': 9.48799991607666, '25%': 17.259333610534668, '50%': 31.299999237060547, '75%': 222.65333557128906, 'max': 475.8999938964844, 'std': 116.61157478604943}, ('Volume', 'TSLA'): {'count': 2535.0, 'mean': 112030827.6923077, 'min': 10620000.0, '25%': 66802950.0, '50%': 92641800.0, '75%': 129428300.0, 'max': 914082000.0, 'std': 73875087.25693773}}
+2025-03-04 14:51:14,791 - root - INFO - Logging started for Forecaster module
+2025-03-04 14:51:14,841 - root - INFO - DataLoader instance created with tickers: ['TSLA']
+2025-03-04 14:51:14,842 - root - INFO - Starting data fetch from YFinance for ['TSLA']
+2025-03-04 14:51:14,892 - root - INFO - Data fetched successfully. Shape: (2535, 5)
+2025-03-04 14:51:14,913 - root - INFO - Data saved to ../data/financial_data.csv
+2025-03-04 14:51:14,913 - root - INFO - DataPreprocessor instance created.
+2025-03-04 14:51:14,914 - root - INFO - Starting data cleaning.
+2025-03-04 14:51:14,915 - root - INFO - Reset index to make 'Date' a column.
+2025-03-04 14:51:14,942 - root - INFO - Data cleaning completed. Basic stats: {('Date', ''): {'count': 2535, 'mean': Timestamp('2020-01-14 14:32:31.242603776'), 'min': Timestamp('2015-01-02 00:00:00'), '25%': Timestamp('2017-07-10 12:00:00'), '50%': Timestamp('2020-01-15 00:00:00'), '75%': Timestamp('2022-07-21 12:00:00'), 'max': Timestamp('2025-01-30 00:00:00'), 'std': nan}, ('Close', 'TSLA'): {'count': 2535.0, 'mean': 117.84820877767409, 'min': 9.57800006866455, '25%': 17.227999687194824, '50%': 30.29800033569336, '75%': 221.5250015258789, 'max': 479.8599853515625, 'std': 116.50828780920438}, ('High', 'TSLA'): {'count': 2535.0, 'mean': 120.47482726042557, 'min': 10.33133316040039, '25%': 17.52766704559326, '50%': 32.3293342590332, '75%': 226.69667053222656, 'max': 488.5400085449219, 'std': 119.23602508848201}, ('Low', 'TSLA'): {'count': 2535.0, 'mean': 115.09751396781124, 'min': 9.403332710266113, '25%': 16.94200038909912, '50%': 29.760000228881836, '75%': 217.06166076660156, 'max': 457.510009765625, 'std': 113.69892958780142}, ('Open', 'TSLA'): {'count': 2535.0, 'mean': 117.87766160908535, 'min': 9.48799991607666, '25%': 17.259333610534668, '50%': 31.299999237060547, '75%': 222.65333557128906, 'max': 475.8999938964844, 'std': 116.61157478604943}, ('Volume', 'TSLA'): {'count': 2535.0, 'mean': 112030827.6923077, 'min': 10620000.0, '25%': 66802950.0, '50%': 92641800.0, '75%': 129428300.0, 'max': 914082000.0, 'std': 73875087.25693773}}
+2025-03-04 14:51:14,945 - root - INFO - Forecaster instance created for TSLA. Train size: 2028, Test size: 507
+2025-03-04 14:51:28,519 - root - INFO - Forecaster instance created for TSLA. Train size: 2028, Test size: 507
+2025-03-04 14:51:32,193 - root - INFO - Starting ARIMA forecasting for TSLA
+2025-03-04 14:51:32,875 - root - INFO - ARIMA forecast completed for TSLA with order: (0, 1, 0)
+2025-03-04 14:51:32,875 - root - INFO - Evaluating ARIMA forecast for TSLA
+2025-03-04 14:51:32,889 - root - INFO - ARIMA metrics for TSLA: {'MAE': 89.90958562546228, 'RMSE': 111.07844416791498, 'MAPE': nan}
+2025-03-04 14:51:50,594 - root - INFO - Starting SARIMA forecasting for TSLA
+2025-03-04 15:02:25,222 - root - ERROR - Error in SARIMA forecasting for TSLA: Unable to allocate 1006. MiB for an array with shape (255, 255, 2028) and data type float64
+2025-03-04 18:12:02,485 - root - INFO - ****************************Logging started for Data Loader module****************************
+2025-03-04 18:12:14,091 - root - INFO - ****************************Logging started for Data Preprocessor module****************************
+2025-03-04 18:12:20,740 - root - INFO - Logging started for Forecaster module
+2025-03-04 18:12:55,823 - root - INFO - DataLoader instance created with tickers: ['TSLA']
+2025-03-04 18:12:55,823 - root - INFO - Starting data fetch from YFinance for ['TSLA']
+2025-03-04 18:13:05,275 - root - INFO - Data fetched successfully. Shape: (2535, 5)
+2025-03-04 18:13:05,323 - root - INFO - Data saved to ../data/financial_data.csv
+2025-03-04 18:13:05,323 - root - INFO - DataPreprocessor instance created.
+2025-03-04 18:13:05,323 - root - INFO - Starting data cleaning.
+2025-03-04 18:13:05,323 - root - INFO - Reset index to make 'Date' a column.
+2025-03-04 18:13:05,382 - root - INFO - Data cleaning completed. Basic stats: {('Date', ''): {'count': 2535, 'mean': Timestamp('2020-01-14 14:32:31.242603776'), 'min': Timestamp('2015-01-02 00:00:00'), '25%': Timestamp('2017-07-10 12:00:00'), '50%': Timestamp('2020-01-15 00:00:00'), '75%': Timestamp('2022-07-21 12:00:00'), 'max': Timestamp('2025-01-30 00:00:00'), 'std': nan}, ('Close', 'TSLA'): {'count': 2535.0, 'mean': 117.84820877767409, 'min': 9.57800006866455, '25%': 17.227999687194824, '50%': 30.29800033569336, '75%': 221.5250015258789, 'max': 479.8599853515625, 'std': 116.50828780920438}, ('High', 'TSLA'): {'count': 2535.0, 'mean': 120.47482726042557, 'min': 10.33133316040039, '25%': 17.52766704559326, '50%': 32.3293342590332, '75%': 226.69667053222656, 'max': 488.5400085449219, 'std': 119.23602508848201}, ('Low', 'TSLA'): {'count': 2535.0, 'mean': 115.09751396781124, 'min': 9.403332710266113, '25%': 16.94200038909912, '50%': 29.760000228881836, '75%': 217.06166076660156, 'max': 457.510009765625, 'std': 113.69892958780142}, ('Open', 'TSLA'): {'count': 2535.0, 'mean': 117.87766160908535, 'min': 9.48799991607666, '25%': 17.259333610534668, '50%': 31.299999237060547, '75%': 222.65333557128906, 'max': 475.8999938964844, 'std': 116.61157478604943}, ('Volume', 'TSLA'): {'count': 2535.0, 'mean': 112030827.6923077, 'min': 10620000.0, '25%': 66802950.0, '50%': 92641800.0, '75%': 129428300.0, 'max': 914082000.0, 'std': 73875087.25693773}}
+2025-03-04 18:16:14,959 - root - INFO - Logging started for Forecaster module
+2025-03-04 18:16:19,946 - root - INFO - DataLoader instance created with tickers: ['TSLA']
+2025-03-04 18:16:19,946 - root - INFO - Starting data fetch from YFinance for ['TSLA']
+2025-03-04 18:16:20,007 - root - INFO - Data fetched successfully. Shape: (2535, 5)
+2025-03-04 18:16:20,047 - root - INFO - Data saved to ../data/financial_data.csv
+2025-03-04 18:16:20,047 - root - INFO - DataPreprocessor instance created.
+2025-03-04 18:16:20,047 - root - INFO - Starting data cleaning.
+2025-03-04 18:16:20,047 - root - INFO - Reset index to make 'Date' a column.
+2025-03-04 18:16:20,076 - root - INFO - Data cleaning completed. Basic stats: {('Date', ''): {'count': 2535, 'mean': Timestamp('2020-01-14 14:32:31.242603776'), 'min': Timestamp('2015-01-02 00:00:00'), '25%': Timestamp('2017-07-10 12:00:00'), '50%': Timestamp('2020-01-15 00:00:00'), '75%': Timestamp('2022-07-21 12:00:00'), 'max': Timestamp('2025-01-30 00:00:00'), 'std': nan}, ('Close', 'TSLA'): {'count': 2535.0, 'mean': 117.84820877767409, 'min': 9.57800006866455, '25%': 17.227999687194824, '50%': 30.29800033569336, '75%': 221.5250015258789, 'max': 479.8599853515625, 'std': 116.50828780920438}, ('High', 'TSLA'): {'count': 2535.0, 'mean': 120.47482726042557, 'min': 10.33133316040039, '25%': 17.52766704559326, '50%': 32.3293342590332, '75%': 226.69667053222656, 'max': 488.5400085449219, 'std': 119.23602508848201}, ('Low', 'TSLA'): {'count': 2535.0, 'mean': 115.09751396781124, 'min': 9.403332710266113, '25%': 16.94200038909912, '50%': 29.760000228881836, '75%': 217.06166076660156, 'max': 457.510009765625, 'std': 113.69892958780142}, ('Open', 'TSLA'): {'count': 2535.0, 'mean': 117.87766160908535, 'min': 9.48799991607666, '25%': 17.259333610534668, '50%': 31.299999237060547, '75%': 222.65333557128906, 'max': 475.8999938964844, 'std': 116.61157478604943}, ('Volume', 'TSLA'): {'count': 2535.0, 'mean': 112030827.6923077, 'min': 10620000.0, '25%': 66802950.0, '50%': 92641800.0, '75%': 129428300.0, 'max': 914082000.0, 'std': 73875087.25693773}}
+2025-03-04 18:16:22,789 - root - INFO - Forecaster instance created for TSLA. Train size: 2028, Test size: 507
+2025-03-04 18:16:35,850 - root - INFO - Starting ARIMA forecasting for TSLA
+2025-03-04 18:16:36,608 - root - INFO - ARIMA future forecast completed for TSLA with order: (0, 1, 0), steps: 252
+2025-03-04 18:23:50,067 - root - INFO - Logging started for Forecaster module
