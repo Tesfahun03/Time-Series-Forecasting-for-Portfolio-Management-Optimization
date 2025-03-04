@@ -31,15 +31,24 @@ class DataPreprocessor:
         """Cleans data by checking types, handling missing values, and ensuring consistency."""
         logging.info("Starting data cleaning.")
         try:
-            # Ensure correct data types
             self.cleaned_data = self.data.copy()
+
+            # Check if 'Date' is a column; if not, reset index assuming it's the index
+            if 'Date' not in self.cleaned_data.columns:
+                self.cleaned_data = self.cleaned_data.reset_index()
+                logging.info("Reset index to make 'Date' a column.")
+
+            # Ensure 'Date' is datetime
             self.cleaned_data['Date'] = pd.to_datetime(
                 self.cleaned_data['Date'])
-            numeric_cols = ['Open', 'High', 'Low', 'Close', 'Volume']
+
+            # Ensure numeric columns are properly typed
+            numeric_cols = ['Open', 'High', 'Low',
+                            'Close', 'Volume']
             self.cleaned_data[numeric_cols] = self.cleaned_data[numeric_cols].apply(
                 pd.to_numeric, errors='coerce')
 
-            # Handle missing values (interpolate for time series continuity)
+            # Handle missing values with interpolation
             missing_count = self.cleaned_data.isnull().sum().sum()
             if missing_count > 0:
                 self.cleaned_data = self.cleaned_data.interpolate(
@@ -49,7 +58,6 @@ class DataPreprocessor:
 
             logging.info("Data cleaning completed. Basic stats: %s",
                          self.cleaned_data.describe().to_dict())
-
             return self.cleaned_data
         except Exception as e:
             logging.error("Error during data cleaning: %s", e)
@@ -61,7 +69,7 @@ class DataPreprocessor:
         try:
             scaler = StandardScaler()
             numeric_cols = ['Open', 'High', 'Low',
-                            'Close', 'Adj Close', 'Volume']
+                            'Close', 'Volume']
             self.cleaned_data[numeric_cols] = scaler.fit_transform(
                 self.cleaned_data[numeric_cols])
             logging.info("Data normalization completed.")
