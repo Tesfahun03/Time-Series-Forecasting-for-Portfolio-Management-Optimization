@@ -157,3 +157,123 @@
 2025-03-04 18:16:35,850 - root - INFO - Starting ARIMA forecasting for TSLA
 2025-03-04 18:16:36,608 - root - INFO - ARIMA future forecast completed for TSLA with order: (0, 1, 0), steps: 252
 2025-03-04 18:23:50,067 - root - INFO - Logging started for Forecaster module
+2025-03-04 18:24:39,893 - root - INFO - ****************************Logging started for Data Loader module****************************
+2025-03-04 18:24:40,808 - root - INFO - ****************************Logging started for Data Preprocessor module****************************
+2025-03-04 18:24:42,101 - root - INFO - Logging started for Forecaster module
+2025-03-04 18:24:43,945 - root - INFO - DataLoader instance created with tickers: ['TSLA']
+2025-03-04 18:24:43,945 - root - INFO - Starting data fetch from YFinance for ['TSLA']
+2025-03-04 18:24:46,145 - root - INFO - Data fetched successfully. Shape: (2535, 5)
+2025-03-04 18:24:46,155 - root - INFO - Data saved to ../data/financial_data.csv
+2025-03-04 18:24:46,155 - root - INFO - DataPreprocessor instance created.
+2025-03-04 18:24:46,155 - root - INFO - Starting data cleaning.
+2025-03-04 18:24:46,155 - root - INFO - Reset index to make 'Date' a column.
+2025-03-04 18:24:46,192 - root - INFO - Data cleaning completed. Basic stats: {('Date', ''): {'count': 2535, 'mean': Timestamp('2020-01-14 14:32:31.242603776'), 'min': Timestamp('2015-01-02 00:00:00'), '25%': Timestamp('2017-07-10 12:00:00'), '50%': Timestamp('2020-01-15 00:00:00'), '75%': Timestamp('2022-07-21 12:00:00'), 'max': Timestamp('2025-01-30 00:00:00'), 'std': nan}, ('Close', 'TSLA'): {'count': 2535.0, 'mean': 117.84820877767409, 'min': 9.57800006866455, '25%': 17.227999687194824, '50%': 30.29800033569336, '75%': 221.5250015258789, 'max': 479.8599853515625, 'std': 116.50828780920438}, ('High', 'TSLA'): {'count': 2535.0, 'mean': 120.47482726042557, 'min': 10.33133316040039, '25%': 17.52766704559326, '50%': 32.3293342590332, '75%': 226.69667053222656, 'max': 488.5400085449219, 'std': 119.23602508848201}, ('Low', 'TSLA'): {'count': 2535.0, 'mean': 115.09751396781124, 'min': 9.403332710266113, '25%': 16.94200038909912, '50%': 29.760000228881836, '75%': 217.06166076660156, 'max': 457.510009765625, 'std': 113.69892958780142}, ('Open', 'TSLA'): {'count': 2535.0, 'mean': 117.87766160908535, 'min': 9.48799991607666, '25%': 17.259333610534668, '50%': 31.299999237060547, '75%': 222.65333557128906, 'max': 475.8999938964844, 'std': 116.61157478604943}, ('Volume', 'TSLA'): {'count': 2535.0, 'mean': 112030827.6923077, 'min': 10620000.0, '25%': 66802950.0, '50%': 92641800.0, '75%': 129428300.0, 'max': 914082000.0, 'std': 73875087.25693773}}
+2025-03-04 18:24:48,610 - root - INFO - Forecaster instance created for TSLA. Train size: 2028, Test size: 507
+2025-03-04 18:24:50,796 - root - INFO - Starting ARIMA forecasting for TSLA
+2025-03-04 18:24:51,691 - root - INFO - ARIMA future forecast completed for TSLA with order: (0, 1, 0), steps: 252
+2025-03-04 18:40:17,517 - root - INFO - ****************************Logging started for Data Loader module****************************
+2025-03-04 18:40:18,525 - root - INFO - ****************************Logging started for Data Preprocessor module****************************
+2025-03-04 18:40:20,239 - root - INFO - Logging started for Forecaster module
+2025-03-04 18:40:20,688 - root - INFO - Logging started for Portfolio Optimizer module
+2025-03-04 18:40:30,362 - root - INFO - DataLoader instance created with tickers: ['TSLA', 'BND', 'SPY']
+2025-03-04 18:40:30,362 - root - INFO - Starting data fetch from YFinance for ['TSLA', 'BND', 'SPY']
+2025-03-04 18:40:32,722 - root - INFO - Data fetched successfully. Shape: (7605, 7)
+2025-03-04 18:40:32,796 - root - INFO - Data saved to ../data/financial_data.csv
+2025-03-04 18:40:32,796 - root - INFO - DataPreprocessor instance created.
+2025-03-04 18:40:32,796 - root - INFO - Starting data cleaning.
+2025-03-04 18:40:32,839 - root - INFO - Data cleaning completed. Basic stats: {'Date': {'count': 7605, 'mean': Timestamp('2020-01-14 14:32:31.242603776'), 'min': Timestamp('2015-01-02 00:00:00'), '25%': Timestamp('2017-07-10 00:00:00'), '50%': Timestamp('2020-01-15 00:00:00'), '75%': Timestamp('2022-07-22 00:00:00'), 'max': Timestamp('2025-01-30 00:00:00'), 'std': nan}, 'Close': {'count': 7605.0, 'mean': 167.6663513710278, 'min': 9.57800006866455, '25%': 65.07392120361328, '50%': 77.63497924804688, '75%': 253.5, 'max': 609.75, 'std': 143.43911705999793}, 'High': {'count': 7605.0, 'mean': 169.12847928720856, 'min': 10.33133316040039, '25%': 65.16397065230976, '50%': 77.71331500682568, '75%': 255.90524108417648, 'max': 610.780029296875, 'std': 144.58361559466738}, 'Low': {'count': 7605.0, 'mean': 166.07857144577434, 'min': 9.403332710266113, '25%': 64.97562176122143, '50%': 77.55418046511552, '75%': 250.64999389648438, 'max': 606.7999877929688, 'std': 142.19057181212193}, 'Open': {'count': 7605.0, 'mean': 167.66208386757808, 'min': 9.48799991607666, '25%': 65.07688443130287, '50%': 77.63448908348022, '75%': 253.50973724454343, 'max': 609.8099975585938, 'std': 143.4455081996712}, 'Volume': {'count': 7605.0, 'mean': 67803524.95726496, 'min': 0.0, '25%': 5627200.0, '50%': 62122300.0, '75%': 96507900.0, 'max': 914082000.0, 'std': 67943983.09766611}}
+2025-03-04 18:41:16,416 - root - INFO - Forecaster instance created for TSLA. Train size: 2028, Test size: 507
+2025-03-04 18:41:16,416 - root - INFO - Starting ARIMA forecasting for TSLA
+2025-03-04 18:41:17,321 - root - INFO - ARIMA future forecast completed for TSLA with order: (0, 1, 0), steps: 252
+2025-03-04 18:41:17,321 - root - INFO - Forecaster instance created for BND. Train size: 2028, Test size: 507
+2025-03-04 18:41:17,321 - root - INFO - Starting ARIMA forecasting for BND
+2025-03-04 18:41:18,571 - root - INFO - ARIMA future forecast completed for BND with order: (0, 1, 0), steps: 252
+2025-03-04 18:41:18,571 - root - INFO - Forecaster instance created for SPY. Train size: 2028, Test size: 507
+2025-03-04 18:41:18,571 - root - INFO - Starting ARIMA forecasting for SPY
+2025-03-04 18:41:21,565 - root - INFO - ARIMA future forecast completed for SPY with order: (2, 1, 0), steps: 252
+2025-03-04 18:43:39,243 - root - INFO - Forecaster instance created for TSLA. Train size: 1984, Test size: 497
+2025-03-04 18:43:39,245 - root - INFO - Starting ARIMA forecasting for TSLA
+2025-03-04 18:43:40,137 - root - INFO - ARIMA future forecast completed for TSLA with order: (0, 1, 0), steps: 252
+2025-03-04 18:43:40,137 - root - INFO - Forecaster instance created for BND. Train size: 1846, Test size: 462
+2025-03-04 18:43:40,137 - root - INFO - Starting ARIMA forecasting for BND
+2025-03-04 18:43:41,522 - root - INFO - ARIMA future forecast completed for BND with order: (0, 1, 0), steps: 252
+2025-03-04 18:43:41,568 - root - INFO - Forecaster instance created for SPY. Train size: 1995, Test size: 499
+2025-03-04 18:43:41,568 - root - INFO - Starting ARIMA forecasting for SPY
+2025-03-04 18:43:44,063 - root - INFO - ARIMA future forecast completed for SPY with order: (2, 1, 0), steps: 252
+2025-03-04 18:44:45,754 - root - INFO - PortfolioOptimizer instance created with assets: ['TSLA', 'BND', 'SPY']
+2025-03-04 18:44:58,991 - root - INFO - Starting Sharpe Ratio optimization
+2025-03-04 18:44:58,991 - root - INFO - Computing annual metrics
+2025-03-04 18:44:58,996 - root - INFO - Annual returns: {'TSLA': 0.4438277092400962, 'BND': 0.010374428993422002, 'SPY': 0.1862177525285329}
+2025-03-04 18:44:58,996 - root - INFO - Covariance matrix computed
+2025-03-04 18:44:59,003 - root - ERROR - Error in Sharpe optimization: Problem does not follow DCP rules. Specifically:
+The objective is not DCP. Its following subexpressions are not:
+power(QuadForm(var1, [[0.33 0.01 0.04]
+ [0.01 0.01 0.01]
+ [0.04 0.01 0.16]]), 0.5)
+2025-03-04 18:48:16,652 - root - INFO - PortfolioOptimizer instance created with assets: ['TSLA', 'BND', 'SPY']
+2025-03-04 18:48:18,787 - root - INFO - Starting Sharpe Ratio optimization
+2025-03-04 18:48:18,787 - root - INFO - Computing annual metrics
+2025-03-04 18:48:18,792 - root - INFO - Annual returns: {'TSLA': 0.4438277092400962, 'BND': 0.010374428993422002, 'SPY': 0.1862177525285329}
+2025-03-04 18:48:18,794 - root - INFO - Covariance matrix computed
+2025-03-04 18:48:18,799 - root - ERROR - Error in Sharpe optimization: Problem does not follow DCP rules. Specifically:
+The objective is not DCP. Its following subexpressions are not:
+power(QuadForm(var18, [[0.33 0.01 0.04]
+ [0.01 0.01 0.01]
+ [0.04 0.01 0.16]]), 0.5)
+2025-03-04 18:48:48,586 - root - INFO - DataLoader instance created with tickers: ['TSLA', 'BND', 'SPY']
+2025-03-04 18:48:48,587 - root - INFO - Starting data fetch from YFinance for ['TSLA', 'BND', 'SPY']
+2025-03-04 18:48:48,766 - root - INFO - Data fetched successfully. Shape: (7605, 7)
+2025-03-04 18:48:48,836 - root - INFO - Data saved to ../data/financial_data.csv
+2025-03-04 18:48:48,836 - root - INFO - DataPreprocessor instance created.
+2025-03-04 18:48:48,836 - root - INFO - Starting data cleaning.
+2025-03-04 18:48:48,853 - root - INFO - Data cleaning completed. Basic stats: {'Date': {'count': 7605, 'mean': Timestamp('2020-01-14 14:32:31.242603776'), 'min': Timestamp('2015-01-02 00:00:00'), '25%': Timestamp('2017-07-10 00:00:00'), '50%': Timestamp('2020-01-15 00:00:00'), '75%': Timestamp('2022-07-22 00:00:00'), 'max': Timestamp('2025-01-30 00:00:00'), 'std': nan}, 'Close': {'count': 7605.0, 'mean': 167.6663513710278, 'min': 9.57800006866455, '25%': 65.07392120361328, '50%': 77.63497924804688, '75%': 253.5, 'max': 609.75, 'std': 143.43911705999793}, 'High': {'count': 7605.0, 'mean': 169.12847928720856, 'min': 10.33133316040039, '25%': 65.16397065230976, '50%': 77.71331500682568, '75%': 255.90524108417648, 'max': 610.780029296875, 'std': 144.58361559466738}, 'Low': {'count': 7605.0, 'mean': 166.07857144577434, 'min': 9.403332710266113, '25%': 64.97562176122143, '50%': 77.55418046511552, '75%': 250.64999389648438, 'max': 606.7999877929688, 'std': 142.19057181212193}, 'Open': {'count': 7605.0, 'mean': 167.66208386757808, 'min': 9.48799991607666, '25%': 65.07688443130287, '50%': 77.63448908348022, '75%': 253.50973724454343, 'max': 609.8099975585938, 'std': 143.4455081996712}, 'Volume': {'count': 7605.0, 'mean': 67803524.95726496, 'min': 0.0, '25%': 5627200.0, '50%': 62122300.0, '75%': 96507900.0, 'max': 914082000.0, 'std': 67943983.09766611}}
+2025-03-04 18:48:53,275 - root - INFO - Forecaster instance created for TSLA. Train size: 1984, Test size: 497
+2025-03-04 18:48:53,275 - root - INFO - Starting ARIMA forecasting for TSLA
+2025-03-04 18:48:54,180 - root - INFO - ARIMA future forecast completed for TSLA with order: (0, 1, 0), steps: 252
+2025-03-04 18:48:54,188 - root - INFO - Forecaster instance created for BND. Train size: 1846, Test size: 462
+2025-03-04 18:48:54,188 - root - INFO - Starting ARIMA forecasting for BND
+2025-03-04 18:48:55,487 - root - INFO - ARIMA future forecast completed for BND with order: (0, 1, 0), steps: 252
+2025-03-04 18:48:55,503 - root - INFO - Forecaster instance created for SPY. Train size: 1995, Test size: 499
+2025-03-04 18:48:55,503 - root - INFO - Starting ARIMA forecasting for SPY
+2025-03-04 18:48:58,263 - root - INFO - ARIMA future forecast completed for SPY with order: (2, 1, 0), steps: 252
+2025-03-04 18:49:05,421 - root - INFO - PortfolioOptimizer instance created with assets: ['TSLA', 'BND', 'SPY']
+2025-03-04 18:49:08,342 - root - INFO - Starting Sharpe Ratio optimization
+2025-03-04 18:49:08,342 - root - INFO - Computing annual metrics
+2025-03-04 18:49:08,342 - root - INFO - Annual returns: {'TSLA': 0.4438277092400962, 'BND': 0.010374428993422002, 'SPY': 0.1862177525285329}
+2025-03-04 18:49:08,342 - root - INFO - Covariance matrix computed
+2025-03-04 18:49:08,348 - root - ERROR - Error in Sharpe optimization: Problem does not follow DCP rules. Specifically:
+The objective is not DCP. Its following subexpressions are not:
+power(QuadForm(var35, [[0.33 0.01 0.04]
+ [0.01 0.01 0.01]
+ [0.04 0.01 0.16]]), 0.5)
+2025-03-04 18:49:26,063 - root - INFO - ****************************Logging started for Data Loader module****************************
+2025-03-04 18:49:26,999 - root - INFO - ****************************Logging started for Data Preprocessor module****************************
+2025-03-04 18:49:28,353 - root - INFO - Logging started for Forecaster module
+2025-03-04 18:49:28,770 - root - INFO - Logging started for Portfolio Optimizer module
+2025-03-04 18:49:28,970 - root - INFO - DataLoader instance created with tickers: ['TSLA', 'BND', 'SPY']
+2025-03-04 18:49:28,970 - root - INFO - Starting data fetch from YFinance for ['TSLA', 'BND', 'SPY']
+2025-03-04 18:49:33,569 - root - INFO - Data fetched successfully. Shape: (7605, 7)
+2025-03-04 18:49:33,636 - root - INFO - Data saved to ../data/financial_data.csv
+2025-03-04 18:49:33,636 - root - INFO - DataPreprocessor instance created.
+2025-03-04 18:49:33,642 - root - INFO - Starting data cleaning.
+2025-03-04 18:49:33,653 - root - INFO - Data cleaning completed. Basic stats: {'Date': {'count': 7605, 'mean': Timestamp('2020-01-14 14:32:31.242603776'), 'min': Timestamp('2015-01-02 00:00:00'), '25%': Timestamp('2017-07-10 00:00:00'), '50%': Timestamp('2020-01-15 00:00:00'), '75%': Timestamp('2022-07-22 00:00:00'), 'max': Timestamp('2025-01-30 00:00:00'), 'std': nan}, 'Close': {'count': 7605.0, 'mean': 167.66635210136297, 'min': 9.57800006866455, '25%': 65.07386779785156, '50%': 77.63497161865234, '75%': 253.5, 'max': 609.75, 'std': 143.4391172096585}, 'High': {'count': 7605.0, 'mean': 169.12848002039934, 'min': 10.33133316040039, '25%': 65.16398591301589, '50%': 77.71333028290881, '75%': 255.90522581087464, 'max': 610.780029296875, 'std': 144.58361574086524}, 'Low': {'count': 7605.0, 'mean': 166.07857217310774, 'min': 9.403332710266113, '25%': 64.97564463786983, '50%': 77.55420332420134, '75%': 250.64999389648438, 'max': 606.7999877929688, 'std': 142.19057196524807}, 'Open': {'count': 7605.0, 'mean': 167.6620845987159, 'min': 9.48799991607666, '25%': 65.07687678910851, '50%': 77.63448908348022, '75%': 253.50984465126498, 'max': 609.8099975585938, 'std': 143.445508351729}, 'Volume': {'count': 7605.0, 'mean': 67803524.95726496, 'min': 0.0, '25%': 5627200.0, '50%': 62122300.0, '75%': 96507900.0, 'max': 914082000.0, 'std': 67943983.09766611}}
+2025-03-04 18:49:33,913 - root - INFO - Forecaster instance created for TSLA. Train size: 1984, Test size: 497
+2025-03-04 18:49:33,913 - root - INFO - Starting ARIMA forecasting for TSLA
+2025-03-04 18:49:34,593 - root - INFO - ARIMA future forecast completed for TSLA with order: (0, 1, 0), steps: 252
+2025-03-04 18:49:34,609 - root - INFO - Forecaster instance created for BND. Train size: 1846, Test size: 462
+2025-03-04 18:49:34,609 - root - INFO - Starting ARIMA forecasting for BND
+2025-03-04 18:49:35,696 - root - INFO - ARIMA future forecast completed for BND with order: (0, 1, 0), steps: 252
+2025-03-04 18:49:35,717 - root - INFO - Forecaster instance created for SPY. Train size: 1995, Test size: 499
+2025-03-04 18:49:35,719 - root - INFO - Starting ARIMA forecasting for SPY
+2025-03-04 18:49:38,683 - root - INFO - ARIMA future forecast completed for SPY with order: (2, 1, 0), steps: 252
+2025-03-04 18:49:38,916 - root - INFO - PortfolioOptimizer instance created with assets: ['TSLA', 'BND', 'SPY']
+2025-03-04 18:49:39,041 - root - INFO - Starting Sharpe Ratio optimization
+2025-03-04 18:49:39,041 - root - INFO - Computing annual metrics
+2025-03-04 18:49:39,054 - root - INFO - Annual returns: {'TSLA': 0.4438277092400962, 'BND': 0.010374695685497093, 'SPY': 0.1862356444285549}
+2025-03-04 18:49:39,054 - root - INFO - Covariance matrix computed
+2025-03-04 18:49:39,083 - root - INFO - Optimal weights (normalized): [5.89554772e-01 1.45693346e-07 4.10445082e-01]
+2025-03-04 18:50:17,773 - root - INFO - Computing portfolio performance
+2025-03-04 18:50:17,773 - root - INFO - Computing annual metrics
+2025-03-04 18:50:17,776 - root - INFO - Annual returns: {'TSLA': 0.4438277092400962, 'BND': 0.010374695685497093, 'SPY': 0.1862356444285549}
+2025-03-04 18:50:17,776 - root - INFO - Covariance matrix computed
+2025-03-04 18:50:17,788 - root - INFO - Portfolio metrics - Return: 0.3381, Volatility: 0.3986, Sharpe: 0.7981, VaR: -0.5398
